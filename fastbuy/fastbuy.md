@@ -6,7 +6,7 @@
 
 - Initial bot detection (captcha v1 for rate limitation / speed)
 - Advanced captcha (advanced detection at "owobot.com/captcha")
-both bypassed :D
+- You can buy hundreds / thousand items without triggering detection or captcha thanks to the second bypass
 
 ## SOURCE 
 
