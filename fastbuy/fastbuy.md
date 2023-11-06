@@ -1,3 +1,5 @@
+Tired of manual buying?
+
 ## Preview:
 in minutes
 ![image](https://github.com/lmaogoodcodenotreally/owo/assets/147619006/112ea33a-7f64-481d-b812-9184d28ca226)
