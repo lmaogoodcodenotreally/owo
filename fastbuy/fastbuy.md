@@ -4,8 +4,8 @@
 ## Codeblock
 ```js
 {
-  api.id(); // get cid & gid
-  let channelId = cid; // cid defined by api
+  api.id();                                                               // get cid & gid
+  let channelId = cid;                                                    // cid defined by api
   await api.typing(channelId);
   let message = 'owo buy 100';
   var loop = true; 
@@ -21,7 +21,7 @@
     const messages = await api.getMessages(channelId);
     for (const msg of messages) {
       if (msg.content.includes("captcha")) { 
-        console.log("Found 'captcha' message, stopping the loop.");  // bail on captcha
+        console.log("Found 'captcha' message, stopping the loop.");         // bail on captcha
         loop = false;
         break;
       }
