@@ -5,11 +5,11 @@
 ```js
 {
   api.id(); // get cid & gid
-  let channelId = cid; 
+  let channelId = cid; // cid defined by api
   await api.typing(channelId);
   let message = 'owo buy 100';
   var loop = true; 
-  let count = 0; # cycle cout
+  let count = 0; 
   while (loop) {
     await api.typing(channelId); 
     const sentMessage = await api.sendMessage(channelId, message);
