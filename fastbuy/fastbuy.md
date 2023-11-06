@@ -11,6 +11,7 @@
 ## SOURCE 
 
 ```js
+                                                                          //
 {                                                                         //
   api.id();                                                               // initial api call for id (cid & gid)
   let channelId = cid;                                                    // cid from api.id()
@@ -43,8 +44,8 @@
       console.log("Waiting to attempt bypass bot detection...");          // log
       const waitTime = Math.floor(Math.random() * 5000) + 10000;          // def waitTime
       await api.delay(waitTime);                                          // wait for waitTime
-    }
-  }
-}
-
+    }                                                                     //
+  }                                                                       //
+}                                                                         //
+                                                                          //
 ```
