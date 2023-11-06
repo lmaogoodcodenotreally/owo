@@ -1,4 +1,4 @@
-Tired of manual buying?
+# Tired of manual buying?
 
 ## Preview:
 in minutes
