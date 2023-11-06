@@ -4,28 +4,39 @@
 ## Codeblock
 ```js
 {
-  api.id();                                                               // get cid & gid
-  let channelId = cid;                                                    // cid defined by api
-  await api.typing(channelId);                                            // initial type 
-  let message = 'owo buy 100';                                            // msg
-  var loop = true;                                                        // set loop
-  let count = 0;                                                          // set count 
+  api.id();
+  let channelId = cid;
+  await api.typing(channelId);
+  let message = 'owo buy 100';
+  var loop = true;
+  let count = 0;
+  let cycleCount = 0;
+  
   while (loop) {
-    await api.typing(channelId);                                          // type
-    const sentMessage = await api.sendMessage(channelId, message);        // send message
-    await api.deleteMessage(channelId, sentMessage.id);                   // delete message
-    console.log(` [+]  Bought crate  (#${++count}) `);                    // log 
-    await api.typing(channelId);                                          // type
-    await api.delay(Math.floor(Math.random() * 500) + 4000);              // default timeout to bypass rate limit for "buy"
-    await api.typing(channelId);                                          // type
-    const messages = await api.getMessages(channelId);                    // get latest messages
+    await api.typing(channelId);
+    const sentMessage = await api.sendMessage(channelId, message);
+    await api.deleteMessage(channelId, sentMessage.id);
+    console.log(` [+]  Bought crate  (#${++count}) `);
+    await api.typing(channelId);
+    await api.delay(Math.floor(Math.random() * 500) + 4000);
+    await api.typing(channelId);
+    const messages = await api.getMessages(channelId);
+
     for (const msg of messages) {
-      if (msg.content.includes("captcha")) {                              // detect captcha
-        console.log("Found 'captcha' message, stopping the loop.");       // bail on captcha + log
-        loop = false;                                                     // bailing
+      if (msg.content.includes("captcha")) {
+        console.log("Found 'captcha' message, stopping the loop.");
+        loop = false;
         break;
       }
     }
+
+    cycleCount++;
+    if (cycleCount % 10 === 0) {
+      console.log("Waiting to attempt bypass bot detection...");
+      const waitTime = Math.floor(Math.random() * 5000) + 10000;
+      await api.delay(waitTime);
+    }
   }
 }
+
 ```
