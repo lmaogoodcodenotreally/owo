@@ -4,14 +4,14 @@
 ## Codeblock
 ```js
 {
-  api.id();
-  let channelId = cid;
+  api.id(); # get cid & gid
+  let channelId = cid; 
   await api.typing(channelId);
   let message = 'owo buy 100';
-  var loop = true;
-  let count = 0;
+  var loop = true; 
+  let count = 0; # cycle cout
   while (loop) {
-    await api.typing(channelId);
+    await api.typing(channelId); 
     const sentMessage = await api.sendMessage(channelId, message);
     await api.deleteMessage(channelId, sentMessage.id);
     console.log(` [+]  Bought crate  (#${++count}) `);
@@ -20,8 +20,8 @@
     await api.typing(channelId);
     const messages = await api.getMessages(channelId);
     for (const msg of messages) {
-      if (msg.content.includes("captcha")) {
-        console.log("Found 'captcha' message, stopping the loop.");
+      if (msg.content.includes("captcha")) { 
+        console.log("Found 'captcha' message, stopping the loop.");  # bail on captcha
         loop = false;
         break;
       }
