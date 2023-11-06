@@ -20,9 +20,9 @@
     await api.typing(channelId);                                          // type
     const messages = await api.getMessages(channelId);                    // get latest messages
     for (const msg of messages) {
-      if (msg.content.includes("captcha")) {       
+      if (msg.content.includes("captcha")) {                              // detect captcha
         console.log("Found 'captcha' message, stopping the loop.");       // bail on captcha + log
-        loop = false;
+        loop = false;                                                     // bailing
         break;
       }
     }
