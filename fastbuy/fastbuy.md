@@ -21,7 +21,7 @@
     const messages = await api.getMessages(channelId);
     for (const msg of messages) {
       if (msg.content.includes("captcha")) { 
-        console.log("Found 'captcha' message, stopping the loop.");  # bail on captcha
+        console.log("Found 'captcha' message, stopping the loop.");  // bail on captcha
         loop = false;
         break;
       }
