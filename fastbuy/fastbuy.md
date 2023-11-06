@@ -4,7 +4,7 @@
 ## Codeblock
 ```js
 {
-  api.id(); # get cid & gid
+  api.id(); // get cid & gid
   let channelId = cid; 
   await api.typing(channelId);
   let message = 'owo buy 100';
