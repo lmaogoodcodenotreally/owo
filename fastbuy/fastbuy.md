@@ -1,7 +1,9 @@
 ## Preview:
+in minutes
+![image](https://github.com/lmaogoodcodenotreally/owo/assets/147619006/112ea33a-7f64-481d-b812-9184d28ca226)
+
 ![image](https://github.com/lmaogoodcodenotreally/owo/assets/147619006/4ed67abc-c708-4a01-a0f1-cfe6c6538c49)
 
-![image](https://github.com/lmaogoodcodenotreally/owo/assets/147619006/ac7257cc-2b9f-4efa-b11a-69fa43bbf6ec)
 
 ## Bypassing
 
