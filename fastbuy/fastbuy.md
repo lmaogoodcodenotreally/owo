@@ -1,7 +1,15 @@
 ## Preview:
 ![image](https://github.com/lmaogoodcodenotreally/owo/assets/147619006/4ed67abc-c708-4a01-a0f1-cfe6c6538c49)
 
-## Codeblock
+
+## Bypassing
+
+- Initial bot detection (captcha v1 for rate limitation / speed)
+- Advanced captcha (advanced detection at "owobot.com/captcha")
+both bypassed :D
+
+## SOURCE 
+
 ```js
 {                                                                         //
   api.id();                                                               // initial api call for id (cid & gid)
