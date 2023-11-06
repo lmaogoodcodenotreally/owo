@@ -45,7 +45,7 @@
     }                                                                     //
                                                                           //
     cycleCount++;                                                         //
-    if (cycleCount % 10 === 0) {                                          // bot captch bypass 2 
+    if (cycleCount % 10 === 0) {                                          // advanced captcha bypass v2 
       console.log("Waiting to attempt bypass bot detection...");          // log
       const waitTime = Math.floor(Math.random() * 5000) + 10000;          // def waitTime
       await api.delay(waitTime);                                          // wait for waitTime
