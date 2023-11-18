@@ -9,8 +9,8 @@
 
 ## Bypassing
 
-- Initial bot detection (captcha v1 for rate limitation / speed)
-- Advanced captcha (advanced detection at "owobot.com/captcha")
+- Initial bot detection (captcha v1 for rate limitation / speed) LMAO
+- Advanced captcha (advanced detection at "owobot.com/captcha") WOOOOW (shitcode)
 - You can buy hundreds / thousand items without triggering detection or captcha thanks to the second bypass
 
 ## SOURCE 
@@ -32,8 +32,7 @@
     await api.deleteMessage(channelId, sentMessage.id);                   // delete msg 
     console.log(` [+]  Bought crate  (#${++count}) `);                    // log
     await api.typing(channelId);                                          // type in cid
-    await api.delay(Math.floor(Math.random() * 500) + 4000);              // initial rate limit bypass 1
-    await api.typing(channelId);                                          // type in cid
+    await api.delay(Math.floor(Math.random() * 500) + 4000);              // initial rate limit bypass 1 wow
     const messages = await api.getMessages(channelId);                    // define messages to getMessages (api)
                                                                           //
     for (const msg of messages) {                                         // search into messages
@@ -45,7 +44,7 @@
     }                                                                     //
                                                                           //
     cycleCount++;                                                         //
-    if (cycleCount % 10 === 0) {                                          // advanced captcha bypass v2 
+    if (cycleCount % 10 === 0) {                                          // advanced captcha bypass v2 omfg
       console.log("Waiting to attempt bypass bot detection...");          // log
       const waitTime = Math.floor(Math.random() * 5000) + 10000;          // def waitTime
       await api.delay(waitTime);                                          // wait for waitTime
