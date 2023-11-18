@@ -18,7 +18,6 @@
     console.log(` [+]  Bought crate  (#${++count}) `);                    // log
     await api.typing(channelId);                                          // type in cid
     await api.delay(Math.floor(Math.random() * 500) + 4000);              // initial rate limit bypass 1
-    await api.typing(channelId);                                          // type in cid
     const messages = await api.getMessages(channelId);                    // define messages to getMessages (api)
                                                                           //
     for (const msg of messages) {                                         // search into messages
@@ -30,7 +29,7 @@
     }                                                                     //
                                                                           //
     cycleCount++;                                                         //
-    if (cycleCount % 10 === 0) {                                          // advanced captcha bypass v2 
+    if (cycleCount % 10 === 0) {                                          // advanced captcha bypass v2 omg
       console.log("Waiting to attempt bypass bot detection...");          // log
       const waitTime = Math.floor(Math.random() * 5000) + 10000;          // def waitTime
       await api.delay(waitTime);                                          // wait for waitTime
