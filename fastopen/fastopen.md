@@ -16,7 +16,6 @@
     const sentMessage = await api.sendMessage(channelId, message);        // send msg
     await api.deleteMessage(channelId, sentMessage.id);                   // delete msg 
     console.log(` [+]  Bought crate  (#${++count}) `);                    // log
-    await api.typing(channelId);                                          // type in cid
     await api.delay(Math.floor(Math.random() * 500) + 4000);              // initial rate limit bypass 1
     const messages = await api.getMessages(channelId);                    // define messages to getMessages (api)
                                                                           //
